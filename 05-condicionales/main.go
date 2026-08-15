@@ -18,11 +18,23 @@ func main() {
 		Que sucede aquí.
 		Establecemos una variable "edad" que se inicializa con el valor de "20". Ahora usamos
 		el condicional if y hacemos una comparación para que el programa tome una decisión.
-		Si edad es mayor o igual a 18 entoces se ejecuta lo que esta dentro del condicional if,
+		Si edad es mayor o igual a 18, entoces, se ejecuta lo que esta dentro del condicional if,
 		es decir se imprime "SI SOY MAYOR". Si no, entramos al "else" (que significa; Caso contrario
 		si es menor a 18) e imprimimos "SOY MENOR"
 
 	*/
+	/*
+		Dentro de GO hay que tener en cuenta otro condicional, "else if", que sirve cuando tenemos
+		más de dos posibilades
+	*/
+	edad1 := 15
 
+	if edad1 < 13 {
+		fmt.Println("Niño")
+	} else if edad1 < 18 {
+		fmt.Println("Adolescente")
+	} else {
+		fmt.Println("Adulto")
+	}
 	fmt.Println()
 }
